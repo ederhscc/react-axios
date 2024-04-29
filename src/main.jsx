@@ -7,6 +7,7 @@ import "./index.css";
 // Pages
 import Home from "./routes/Home.jsx";
 import NewPost from "./routes/NewPost.jsx";
+import Post from "./routes/Post.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,16 @@ const router = createBrowserRouter([
         path: "/new",
         element: <NewPost />,
       },
+      {
+        path: "/posts/:id",
+        element: <Post />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    < RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

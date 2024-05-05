@@ -1,4 +1,4 @@
-import "./NavBar.css"
+import "./NavBar.css";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -15,6 +15,9 @@ const NavBar = () => {
           <Link to={"/new"} className="new-btn">
             Novo Post
           </Link>
+        </li>
+        <li>
+          <Link to={"/admin"}>Gerenciar</Link>
         </li>
       </ul>
     </nav>
